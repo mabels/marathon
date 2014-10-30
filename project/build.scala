@@ -134,6 +134,7 @@ object Dependencies {
     hadoopHdfs % "compile",
     hadoopCommon % "compile",
     beanUtils % "compile",
+    commonsLang % "compile",
     scallop % "compile",
 
     // test
@@ -189,6 +190,7 @@ object Dependency {
   val hadoopHdfs = "org.apache.hadoop" % "hadoop-hdfs" % V.Hadoop excludeAll(excludeMortbayJetty, excludeJavaxServlet)
   val hadoopCommon = "org.apache.hadoop" % "hadoop-common" % V.Hadoop excludeAll(excludeMortbayJetty, excludeJavaxServlet)
   val beanUtils = "commons-beanutils" % "commons-beanutils" % "1.9.2"
+  val commonsLang = "commons-lang" % "commons-lang" % "2.6"
   val scallop = "org.rogach" %% "scallop" % V.Scallop
 
   object Test {

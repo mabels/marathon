@@ -105,6 +105,8 @@ message ExtendedContainerInfo {
     }
 
     repeated PortMapping port_mappings = 3;
+
+    repeated mesos.ContainerInfo.DockerInfo.InterfaceMapping interface_mappings = 4;
   }
 
   required mesos.ContainerInfo.Type type = 1;
